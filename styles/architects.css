@@ -5,6 +5,11 @@
     font-family: 'Work Sans', sans-serif;
 }
 
+.text-gray {
+    color: gray;
+    font-family: 500;
+}
+
 .btn-primary {
     border-radius: 8px;
     color: #FFF;
@@ -62,12 +67,44 @@ nav li a {
     color: rgb(19, 19, 19);
 }
 
-.banner-des{
-    color: rgb(114, 114, 114);
-}
-
 .banner img {
     width: 100%;
+}
+
+/* main part styles */
+main{
+    max-width: 1440px;
+    margin: 70px auto;
+}
+
+.teams-container {
+    display: flex;
+    align-items: center;
+    padding: 0 100px;
+}
+
+.teams-image{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.teams-content {
+    padding: 0 70px;
+}
+
+.teams-title{
+    font-size: 2.8rem;
+}
+
+.quick-list{
+    color: rgb(114, 114, 114);
+    font-weight: 500px;
+}
+
+.text-features{
+    color: rgb(253, 136, 2);
+    font-weight: 700px;
 }
 
 
@@ -78,8 +115,16 @@ nav li a {
         padding: 20px;
     }
 
-    nav {
-        flex-direction: column-reverse;
+    nav, .teams-container {
+        flex-direction: column;
+    }
+
+    .teams-image{
+        grid-template-columns: 1fr;
+    }
+
+    .teams-content{
+        padding: 0 5px;
     }
 }
 
@@ -88,8 +133,8 @@ nav li a {
     header{
         padding: 50px;
     }
-    nav{
-        flex-direction: column-reverse;
+    nav, .teams-container{
+        flex-direction: column;
     }
 }
 
